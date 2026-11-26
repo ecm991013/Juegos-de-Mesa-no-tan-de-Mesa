@@ -6,7 +6,7 @@ services:
     region: oregon
 
     buildCommand: >-
-      unzip -o Juegos_de_mesa_no_tan_de_mesa_GitHub_Render_FIX.zip -d .
+      unzip -o Juegos_de_mesa_no_tan_de_mesa.zip -d .
       && npm install --omit=dev --no-audit --no-fund
 
     startCommand: npm start
