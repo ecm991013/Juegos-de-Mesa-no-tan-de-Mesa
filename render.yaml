@@ -3,7 +3,13 @@ services:
     name: juegos-de-mesa-no-tan-de-mesa
     runtime: node
     plan: free
-    buildCommand: npm install --omit=dev --no-audit --no-fund
+    region: oregon
+
+    buildCommand: >-
+      unzip -o Juegos_de_mesa_no_tan_de_mesa_GitHub_Render_FIX.zip -d .
+      && npm install --omit=dev --no-audit --no-fund
+
     startCommand: npm start
+
     healthCheckPath: /health
     autoDeploy: true
