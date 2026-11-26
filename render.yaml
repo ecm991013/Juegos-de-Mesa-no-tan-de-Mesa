@@ -3,7 +3,7 @@ services:
     name: juegos-de-mesa-no-tan-de-mesa
     runtime: node
     plan: free
-    buildCommand: npm install --prefix Rummikub_Online --omit=dev --no-audit --no-fund
+    buildCommand: npm install --omit=dev --no-audit --no-fund
     startCommand: npm start
     healthCheckPath: /health
     autoDeploy: true
