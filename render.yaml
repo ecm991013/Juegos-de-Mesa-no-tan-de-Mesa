@@ -1,7 +1,7 @@
 
 services:
   - type: web
-    name: juegos-de-mesa-no-tan-de-mesa
+    name: juegos de mesa no tan de mesa
     runtime: node
     plan: free
     region: oregon
